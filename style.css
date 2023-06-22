@@ -1,0 +1,87 @@
+* {
+  font-family: "Arvo", serif;
+  color: white;
+}
+body {
+  margin: 0%;
+  background-color: black;
+  display: flexbox;
+}
+#main {
+  width: 105em;
+  float: right;
+  display: flexbox;
+}
+#nav img {
+  width: 80%;
+  margin-top: 1em;
+  margin-left: 1.2em;
+  margin-right: auto;
+}
+#nav {
+  align-items: flex-start;
+  flex: 1;
+  background-color: rgb(0, 0, 0);
+  border-right: 2px solid rgb(216, 216, 216);
+  width: 15%;
+  height: 100%;
+  position: fixed;
+  z-index: 2;
+}
+#profile {
+  display: flex;
+  width: 100%;
+  background-color: black;
+  border-bottom: 2px solid rgb(216, 216, 216);
+}
+#pfp{
+  flex-basis: 15%;
+  display: grid;
+  width: 16em;
+  height: 16em;
+  margin: 5%;
+  margin-top: 2%;
+  margin-left: 8%;
+}
+#pfp img{
+  margin:auto ;
+  grid-row:1;
+  grid-column:1;
+  width: 90%;
+  height: 90%;
+  z-index: 1;
+  background-color: black;
+  border-radius: 50%;
+  position: relative;
+}
+#outline{
+  grid-row:1;
+  grid-column:1;
+  background: linear-gradient(#f9ce34, #ee2a7b , #6228d7);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  z-index: 0;
+  position: relative;
+}
+#text{
+  flex-basis: 60%;
+  width: 60%;
+  height: 100%;
+  margin-top: 2%;
+  flex-shrink: 3em;
+}
+#username{
+  margin-bottom: 2%;
+}
+#bio{
+  font-size: 1.14em;
+}
+#projects{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 12em;
+}
+.project{
+  margin: 2em;
+} 
