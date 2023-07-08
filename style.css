@@ -8,47 +8,39 @@ body {
   display: flexbox;
 }
 #main {
-  width: 105em;
+  width: 100%;
   float: right;
   display: flexbox;
 }
-#nav img {
-  width: 80%;
-  margin-top: 1em;
-  margin-left: 1.2em;
-  margin-right: auto;
+#logo{
+  margin-top: 5px;
+  width: 20%;
 }
-#nav {
-  align-items: flex-start;
-  flex: 1;
-  background-color: rgb(0, 0, 0);
-  border-right: 2px solid rgb(216, 216, 216);
-  width: 15%;
-  height: 100%;
-  position: fixed;
-  z-index: 2;
+#mainlogo{
+  text-align: center;
 }
 #profile {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   background-color: black;
   border-bottom: 2px solid rgb(216, 216, 216);
+  padding-bottom: 60px;
+  justify-content: center;
 }
 #pfp{
   flex-basis: 15%;
   display: grid;
-  width: 16em;
-  height: 16em;
-  margin: 5%;
-  margin-top: 2%;
-  margin-left: 8%;
+  width: 100%;
+  height: 100%;
+  margin-left:5%;
+  margin-right:5%;
 }
 #pfp img{
-  margin:auto ;
   grid-row:1;
   grid-column:1;
-  width: 90%;
-  height: 90%;
+  width: 225px;
+  height: 225px;
   z-index: 1;
   background-color: black;
   border-radius: 50%;
@@ -58,30 +50,44 @@ body {
   grid-row:1;
   grid-column:1;
   background: linear-gradient(#f9ce34, #ee2a7b , #6228d7);
-  width: 100%;
-  height: 100%;
+  width: 240px;
+  height: 240px;
   border-radius: 50%;
   z-index: 0;
   position: relative;
+  text-align: center;
+}
+#outline img{
+  top: 3%;
+  bottom: auto;
 }
 #text{
   flex-basis: 60%;
-  width: 60%;
+  width: 200px;
   height: 100%;
   margin-top: 2%;
-  flex-shrink: 3em;
+  flex-shrink: 6px;
 }
 #username{
   margin-bottom: 2%;
 }
 #bio{
-  font-size: 1.14em;
+  font-size: 16px;
+  flex-wrap: wrap;
 }
 #projects{
   display: flex;
   flex-wrap: wrap;
-  margin-left: 12em;
+  justify-content: center;
 }
 .project{
-  margin: 2em;
+  margin: 4px;
 } 
+@media(max-width : 800px){
+  /* #pfp{
+    display: none;
+  } */
+  #text{
+    justify-content: center;
+  }
+}
