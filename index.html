@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -11,6 +11,101 @@
       href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <style>
+      * {
+        font-family: "Arvo", serif;
+        color: white;
+      }
+      body {
+        margin: 0%;
+        background-color: black;
+        display: flexbox;
+      }
+      #main {
+        width: 100%;
+        float: right;
+        display: flexbox;
+      }
+      #logo {
+        margin-top: 5px;
+        width: 20%;
+      }
+      #mainlogo {
+        text-align: center;
+      }
+      #profile {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        background-color: black;
+        border-bottom: 2px solid rgb(216, 216, 216);
+        padding-bottom: 60px;
+        justify-content: center;
+      }
+      #pfp {
+        flex-basis: 15%;
+        display: grid;
+        width: 100%;
+        height: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+      #pfp img {
+        grid-row: 1;
+        grid-column: 1;
+        width: 225px;
+        height: 225px;
+        z-index: 1;
+        background-color: black;
+        border-radius: 50%;
+        position: relative;
+      }
+      #outline {
+        grid-row: 1;
+        grid-column: 1;
+        background: linear-gradient(#f9ce34, #ee2a7b, #6228d7);
+        width: 240px;
+        height: 240px;
+        border-radius: 50%;
+        z-index: 0;
+        position: relative;
+        text-align: center;
+      }
+      #outline img {
+        top: 3%;
+        bottom: auto;
+      }
+      #text {
+        flex-basis: 60%;
+        width: 200px;
+        height: 100%;
+        margin-top: 2%;
+        flex-shrink: 6px;
+      }
+      #username {
+        margin-bottom: 2%;
+      }
+      #bio {
+        font-size: 16px;
+        flex-wrap: wrap;
+      }
+      #projects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .project {
+        margin: 4px;
+      }
+      @media (max-width: 800px) {
+        /* #pfp{
+    display: none;
+  } */
+        #text {
+          justify-content: center;
+        }
+      }
+    </style>
   </head>
   <body>
     <!-- ![portofoliogram] -->
@@ -22,7 +117,6 @@
       <div id="profile">
         <div id="pfp">
           <div id="outline"><img src="images/logo.png" alt="" /></div>
-          
         </div>
         <div id="text">
           <h1 id="username">Zakaria Mourtaban</h1>
