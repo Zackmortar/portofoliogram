@@ -77,25 +77,52 @@
       }
       #text {
         flex-basis: 60%;
-        width: 200px;
+        width: fit-content;
         height: 100%;
         margin-top: 2%;
         flex-shrink: 6px;
       }
       #username {
         margin-bottom: 2%;
+        width: fit-content;
       }
       #bio {
         font-size: 16px;
         flex-wrap: wrap;
+        width: fit-content;
       }
       #projects {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
       }
-      .project {
-        margin: 4px;
+      .projectcontainer{
+        width: 100%;
+        height: fit-content;
+        border-radius: 10px;
+        border:4px solid rgb(216, 216, 216);
+        margin-left: 3%;
+        margin-right: 3%;
+        margin-top:3%;
+        overflow: hidden;
+      }
+      .project{
+        text-align: center;
+        padding: 2%;
+      }
+      .project p{
+        font-size: 140%;
+      }
+      .project a{
+        text-decoration: none;
+        color: 	#36ba53;
+        font-size: 1.2em;
+      }
+      #moret{
+        font-size: 2em;
+      }
+      #more{
+        text-align: center;
       }
       @media (max-width: 800px) {
         /* #pfp{
@@ -119,93 +146,36 @@
           <div id="outline"><img src="images/logo.png" alt="" /></div>
         </div>
         <div id="text">
-          <h1 id="username">Your Name</h1>
+          <h1 id="username">Zakaria Mourtaban</h1>
           <div id="bio">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
-              natus et porro explicabo, modi officia quia autem. Aliquid, itaque
-              id veniam Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Distinctio debitis fuga omnis neque veritatis eligendi laborum
-              doloremque eius dicta? Illum, voluptatum facilis. Fugit, id odio
-              libero consectetur autem temporibus obcaecati Lorem, ipsum dolor
-              sit amet consectetur adipisicing elit. Nam sed et quos,
-              repellendus voluptatem quisquam aliquam officia provident
-              blanditiis ipsa harum incidunt ad eaque! Obcaecati sed veniam
-              quisquam consequatur dolor! eum magni dolorum voluptas.
+              Self taught programer.
+              <br>
+              2005.
+              <br>
+              Front-End developer.
             </p>
           </div>
         </div>
       </div>
       <div id="projects">
-        <div class="project">
-          <button onclick="">
-            <img src="images/placeholder.jpg" />
-          </button>
+        <div class="projectcontainer">
+          <div class="project">
+            <p>Portfoliogram!It is this very page you are on,i made this template in a couple hours as a fun side project 
+            <br>
+              to further improve my front-end skills
+            <br>
+              You can check out the source code at
+            <br>
+            <br>
+            <a href="https://github.com/Zackmortar/portofoliogram">My Github!</a>
+            </p> 
+          </div>
         </div>
-        <div class="project">
-          <button onclick="">
-            <img src="images/placeholder.jpg" />
-          </button>
-        </div>
-        <div class="project">
-          <button onclick="">
-            <img src="images/placeholder.jpg" />
-          </button>
-        </div>
-        <div class="project">
-          <button onclick="">
-            <img src="images/placeholder.jpg" />
-          </button>
-        </div>
-        <div class="project">
-          <button onclick="">
-            <img src="images/placeholder.jpg" />
-          </button>
-        </div>
-        <div class="project">
-          <button onclick="">
-            <img src="images/placeholder.jpg" />
-          </button>
-        </div>
-        <div class="project">
-          <button onclick="">
-            <img src="images/placeholder.jpg" />
-          </button>
-        </div>
-        <div class="project">
-          <button onclick="">
-            <img src="images/placeholder.jpg" />
-          </button>
-        </div>
-        <div class="project">
-          <button onclick="">
-            <img src="images/placeholder.jpg" />
-          </button>
-        </div>
-        <div class="project">
-          <button onclick="">
-            <img src="images/placeholder.jpg" />
-          </button>
-        </div>
-        <div class="project">
-          <button onclick="">
-            <img src="images/placeholder.jpg" />
-          </button>
-        </div>
-        <div class="project">
-          <button onclick="">
-            <img src="images/placeholder.jpg" />
-          </button>
-        </div>
-        <div class="project">
-          <button onclick="">
-            <img src="images/placeholder.jpg" />
-          </button>
-        </div>
-        <div class="project">
-          <button onclick="">
-            <img src="images/placeholder.jpg" />
-          </button>
+        <div id="more">
+          <p id="moret">And much more to come!</p>
+          <br>
+          <p>Contact me at: <a href="mailto:zackmortar9@gmail.com">zackmortar9@gmail.com</a></p>
         </div>
       </div>
     </div>
