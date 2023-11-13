@@ -14,7 +14,7 @@ Contact Form: Allow visitors to get in touch with you easily through a built-in 
 Getting Started
 Clone the Repository:
 
-git clone https://github.com/yourusername/portofoliogram.git
+git clone https://github.com/zackmortar/portofoliogram.git
 Navigate to the Project Directory:
 
 cd portofoliogram
